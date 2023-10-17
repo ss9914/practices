@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Prototype</title>
+
+</head>
+<style>
+    body{
+        margin: 50px;
+        border: 50%;
+        padding-bottom: 50px;
+        line-height: 1.4em;
+    } 
+    .navbar_container{
+        color: aqua;
+        margin:0 22%;
+        width: 60%;
+        padding: 10px;
+        height: 70px;
+        max-width: 1300px;
+    }
+    .bar{
+        padding: 10px;
+    }
+    .c1{
+        margin:auto;
+        width: 60%;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .button{
+        display: flex;
+        padding: 20px 32px;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+       margin-top: 5%;
+       margin-left:5%;
+       columns: 3;
+       text-align: center;
+       box-sizing: border-box;
+       position: relative;
+       float: left; 
+       overflow: hidden;
+    }
+    #box1{
+       float: left;
+       border: 3px solid silver;;
+       width: 80%;
+       height: 260px;
+       background-image: linear-gradient(to top,rgb(250, 250, 85),rgb(112, 248, 112));
+       color: black;
+    }
+    #box2{
+        float: left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 260px;
+        background-image: linear-gradient(to top,rgb(250, 250, 85),rgb(112, 248, 112));
+        color: black;
+
+    }
+    #box3{
+        float:left;
+        width: 80%;
+        height: 260px;
+        border: 3px solid silver;
+        background-image: linear-gradient(to top,rgb(250, 250, 85),rgb(112, 248, 112));
+        color: black;    
+    }
+    h3{
+        text-align: center;
+        padding: 0px 30px;
+        font-size:medium;   
+    }
+    .heading{
+        margin-top:30%;
+    }
+    .c2{
+        text-align: center;
+        margin-bottom: 7%;  
+    }
+    .wrapbox{
+        columns: 5;
+        margin-left: 4%;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+    }
+    #boxone{
+        float: left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 170px;
+        background-image: linear-gradient(rgb(250, 14, 250),rgb(250, 171, 25),rgb(249, 249, 125));
+        color: black; 
+    }
+    #boxtwo{
+        float:left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 170px;
+        background-image: linear-gradient(rgb(250, 14, 250),rgb(250, 171, 25),rgb(249, 249, 125));
+        color: black; 
+    }
+    #boxthree{
+        float: left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 170px;
+        background-image: linear-gradient(rgb(250, 14, 250),rgb(250, 171, 25),rgb(249, 249, 125));
+        color: black; 
+    }
+    #boxfour{
+        float:left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 170px;
+        background-image: linear-gradient(rgb(250, 14, 250),rgb(250, 171, 25),rgb(249, 249, 125));
+        color: black; 
+    }
+    #boxfive{
+        float: left;
+        border: 3px solid silver;
+        width: 80%;
+        height: 170px;
+        background-image: linear-gradient(rgb(250, 14, 250),rgb(250, 171, 25),rgb(249, 249, 125));
+        color: black; 
+    }
+    .heading1{
+        margin-top: 60px;
+    }
+    .wrappedbox{
+        columns: 3;
+        margin-left:5%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size:1.2em;
+        overflow: hidden;
+        padding: 0px 80px;
+    }
+    h4{
+        margin-top: 15%;
+    }
+    #box1one{
+        float: left;
+        border: 3px solid silver;
+        width: 85%;
+        height: 250px;
+        text-align: center;
+        font-size:0.8em;
+        background-image: linear-gradient(to top,rgb(122, 254, 122),rgb(66, 244, 250));
+        color: black;
+    }
+    #box2two{
+        float:left;
+        border: 3px solid silver;
+        width: 85%;
+        height: 250px;
+        text-align: center;
+        font-size:0.8em;
+        background-image: linear-gradient(to top,rgb(122, 254, 122),rgb(66, 244, 250));
+        color: black;
+    }
+    #box3three{ 
+        float: left;
+        border: 3px solid silver;
+        width: 85%;
+        height: 250px;
+        font-size:0.8em;
+        margin-bottom: 0%; 
+        background-image: linear-gradient(to top,rgb(122, 254, 122),rgb(66, 244, 250));
+        color: black;
+    }
+    .box img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_toggle">Home</a>
+            <a href="/" class="bar">About</a>
+            <a href="/" class="bar">Work Process</a>
+            <a href="/" class="bar">Testimonials</a>
+            <a href="/" class="bar">Pricing Tables </a>
+            <a href="/" class="bar">Blog Entries</a>
+            <a href="/" class="bar">Contact Us</a>
+        </div>
+    </nav>
+    <div class="c1"><p>Front End developer architects and develops websites and applicatins using web technologies</p></div>
+    <nav class="navbar_btn"><div class="button"><button type="button" onclick="nextpage()">DISCOVER MORE</button></div>
+    </nav>
+</header>
+<section>
+    <div class="box">
+    <div id="box1">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/54xm14N/36121.png" alt="36121" border="0"></a>
+        <h3>Responsive</h3> 
+        <p>Responsive design is an approach to web page creation that make use of flexible layout.</p> 
+    </div>
+    <div id="box2">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/j3t7zqj/103079.png" alt="103079" border="0"></a>
+         <h3>Better UI\UX</h3>
+         <p>Create user-friendly interface that enable users to understand how to use complex technical products.</p> 
+    </div>
+    <div id="box3">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/Y05hjz2/3419265.png" alt="3419265" border="0"></a>
+        <h3>SEO</h3>
+        <p style="margin-top:-10px ;">Search Engine Optimization and is the process used to optimize a websites technical configuration/ content relevance and link popularity so its pages can become easily finable,</p>
+    </div>
+    </div>
+</section> 
+<section>
+    <div class="heading">
+        <h3>Work Process</h3>
+    </div>
+        <div class="c2"><p style="margin-top:50px;">
+        When divided into 5steps the design process ranges from identifying the problem that the design or product will solve,all the way to research,planning,prototyping and more.
+        </p>
+        </div>
+    <div class="wrapbox">
+        <div id="boxone">
+            <h4>Get ideas</h4>
+            <h6 style="font-size:medium;"> You'll figure out the market state.</h6>
+         </div>
+        <div id="boxtwo">
+             <h4>Sketch Up</h4>
+             <h6 style="font-size:medium;">Sketch Up using tools like figma.</h6>
+        </div>
+        <div id="boxthree">
+            <h4>Design</h4>
+            <h6 style="font-size:medium;">Construct HTML,CSS,JS Script.</h6>
+        </div>
+        <div id="boxfour">
+            <h4>Content Creation</h4>
+            <h6 style="font-size:medium;">Get the professional content.</h6>
+        </div>
+        <div id="boxfive">
+            <h4>Launch</h4>
+            <h6 style="font-size:medium;">Host in a website to access.</h6>
+        </div>
+    </div>
+</section>
+<section>
+<div class="heading1">
+    <h3>What do they say?</h3>
+</div>
+    <div class="c2"><p style="margin-top:50px;" >
+   Donec tempus,sem non rutrum imperdiet.Lectus orci fringilla nulla at aacumsan elit eros a tupis.Ut sagittis tectus libero.
+    </p>
+    </div>
+<div class="wrappedbox">
+    <div id="box1one">
+        <p  style="margin-top:60px ;"> Responsive design is an approach to web page creation that makes use of flexible layouts.</p><br><br>
+            <p style="margin-top:25px;text-align: right;"> Get the professional content.</p>
+     </div>
+    <div id="box2two">
+         <p style="margin-top:60px ;" >Create user-friendly interface that enable users to understand how to use complex technical products</p><br><br> 
+            <p style="margin-top:25px;text-align: right;"> Get the professional content.</p>
+    </div>
+    <div id="box3three">
+        <p  style="margin-top:60px ;">Search Engine Optimization and is the process used to optimize a websites technical configuration/content relevance and link popularity so its pages can become easily finable.</p><br><br>
+            <p style="margin-top:-20px;text-align: right;"> Get the professional content.</p>
+    </div>
+</div>
+</section> 
+</body>
+</html>
